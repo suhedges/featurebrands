@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Brands</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .unique-disp-page-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #7FA2B6;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
+            gap: 20px;
+        }
+
+        /* For medium-sized screens (e.g., tablets) */
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for medium-sized screens */
+            }
+        }
+
+        /* For small screens (e.g., mobile devices) */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+            }
+        }
+
+        .brand-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .brand-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+
+        }
+
+        .img-responsive {
+            width: 140px;
+            height: auto;
+            max-width: 100%; /* Ensure it fits in smaller containers */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container gm-editing ui-sortable custom-border" style="position: relative; left: 0px; top: 0px;">
+        <h2 class="unique-disp-page-title">
+            FEATURED BRANDS
+        </h2>
+        <div class="grid-container" id="brand-grid">
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/martin">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/martin_slider_98hghrg.png" alt="Martin" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/nachi">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/nachi_slider_kjdfg87.png" alt="Nachi" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/ntn">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/ntn_slider_kjhufg7re.png" alt="NTN" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/tsubaki">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Tsubaki_slider_sdiuhg8s.png" alt="UST" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/baldor-reliance">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/baldor_slider_sdkjhbgf7.png" alt="Baldor" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/dodge">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/dodge_slider_sdjhg7.png" alt="Dodge" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/fag">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/fag_slider_sdjhg8.png" alt="FAG" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+            <div class="brand-card">
+                <a href="https://www.tristate-bearing.com/b/ina">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/INA_slider_dfjuhg8.png" alt="INA" class="img-responsive first-carousel-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
