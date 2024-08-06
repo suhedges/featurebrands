@@ -29,20 +29,6 @@
             gap: 20px;
         }
 
-        /* For medium-sized screens (e.g., tablets) */
-        @media (max-width: 1024px) {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr); /* 2 columns for medium-sized screens */
-            }
-        }
-
-        /* For small screens (e.g., mobile devices) */
-        @media (max-width: 600px) {
-            .grid-container {
-                grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
-            }
-        }
-
         .brand-card {
             position: relative;
             overflow: hidden;
@@ -67,6 +53,37 @@
             height: auto;
             max-width: 100%; /* Ensure it fits in smaller containers */
             display: block;
+        }
+
+        /* For medium-sized screens (e.g., tablets) */
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr); /* 2 columns for medium-sized screens */
+            }
+
+            .unique-disp-page-title {
+                font-size: 18px;
+            }
+        }
+
+        /* For small screens (e.g., mobile devices) */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr); /* 1 column for small screens */
+            }
+
+            .unique-disp-page-title {
+                font-size: 0.7em;
+            }
+
+            .brand-card {
+                padding: 10px;
+            }
+
+            .img-responsive {
+                width: 108px;
+                height: auto;
+            }
         }
     </style>
 </head>
